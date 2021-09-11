@@ -24,7 +24,7 @@ Python is used to generate `mesh.hpp`. For now `main.cpp` file is a mess, but yo
 
 #### Dependencies to generate a mesh
 
-- Python 3.96
+- Python 3.9.6
 - Numpy 1.21.0
 
 ## TODO
