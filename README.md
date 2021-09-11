@@ -5,9 +5,13 @@
 Grid of oscillators solved with Euler method implemented in C++/OpenGL.
 
 ## Demo
+
 Hexagonal grid
+
 ![alt text](https://github.com/EQUINOX24/OscillatorGrid/blob/master/demo_hex.gif)
+
 Square grid
+
 ![alt text](https://github.com/EQUINOX24/OscillatorGrid/blob/master/demo_aquare.gif)
 
 ## "Documentation"
