@@ -11,11 +11,11 @@ struct Vec2 {
     Vec2(float x, float y) : x(x), y(y) {};
     
     float Norm() const {
-        return sqrt(x * x + y * y);
+        return sqrt(x*x + y*y);
     }
     
     float Quadrance() const {
-        return x * x + y * y;
+        return x*x + y*y;
     }
 };
 
@@ -28,11 +28,11 @@ Vec2 operator-(const Vec2& left, const Vec2& right) {
 }
 
 Vec2 operator*(const float& left, const Vec2& right) {
-    return Vec2(left * right.x, left * right.y);
+    return Vec2(left*right.x, left*right.y);
 }
 
 Vec2 operator*(const Vec2& left, const float& right) {
-      return Vec2(left.x * right, left.y / right);
+      return Vec2(left.x*right, left.y / right);
 }
 
 Vec2 operator/(const Vec2& left, const float& right) {
@@ -41,18 +41,18 @@ Vec2 operator/(const Vec2& left, const float& right) {
 
 // dot product
 float operator*(const Vec2& left, const Vec2& right) {
-    return left.x * right.x + left.y * right.y;
+    return left.x*right.x + left.y*right.y;
 }
 
 // cross product
 float operator^(const Vec2& left, const Vec2& right) {
-    return left.x * right.y - left.y * right.x;
+    return left.x*right.y - left.y*right.x;
 }
 
 Vec2 operator/(const float& left, const Vec2& right) {
-    // return left * right / (right * right); // simpler implementation
-    float normSq = right.x * right.x + right.y * right.y;
-    return Vec2(left * right.x / normSq, left * right.y / normSq);
+    // return left*right / (right*right); // simpler implementation
+    float normSq = right.x*right.x + right.y*right.y;
+    return Vec2(left*right.x / normSq, left*right.y / normSq);
 }
 
 void operator+=(Vec2& left, const Vec2& right) {
